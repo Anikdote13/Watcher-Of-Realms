@@ -37,6 +37,7 @@ class BaseFunction:
         Args:
             image (string): путь до изображение
             confidence (float): коэфициент совпадения
+            wait (float): сколько ждать после клика (сек.)
         """
         try:
             coor = pag.locateCenterOnScreen(image, confidence=confidence)
@@ -54,6 +55,7 @@ class BaseFunction:
         Args:
             coor_x (int): координата 'x'
             coor_y (int): координата 'y'
+            wait (float): сколько ждать после клика (сек.)
         """
         pag.click(coor_x, coor_y)
         logging.info(f"Нажимаю на координаты x = {coor_x}, y = {coor_y}")
