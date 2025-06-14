@@ -1,6 +1,3 @@
-import logging
-import pyautogui as pag
-
 import time
 import datetime
 import os
